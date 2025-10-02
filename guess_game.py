@@ -22,12 +22,12 @@ class GuessTheNumberGame(Game):
                     print("Congratulations! You guessed correctly.")
                     return #Exit the game after a correct guess
                       
-                else:
-                    print("That's not a valid number! Try again.")
+            else:
+                print("That's not a valid number! Try again.")
                 
-                self.attempts -= 1
-                if self.attempts > 0:
-                    print(f"You have {self.attempts} attempts left.")
+            self.attempts -= 1
+            if self.attempts > 0:
+                print(f"You have {self.attempts} attempts left.")
 
         print("sorry, you didn't guess the number. Better luck next time!")
 
